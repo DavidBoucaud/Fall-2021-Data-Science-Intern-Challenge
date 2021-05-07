@@ -23,6 +23,19 @@ print(df.sort_values(by='order_amount', ascending=False)[
     ].head(10))
 ```
 ![alt text](https://github.com/DavidBoucaud/Fall-2021-Data-Science-Intern-Challenge/blob/main/plot.svg)
+```
+      user_id  order_amount  total_items          created_at
+2153      607        704000         2000  2017-03-12 4:00:00
+3332      607        704000         2000  2017-03-24 4:00:00
+520       607        704000         2000  2017-03-02 4:00:00
+1602      607        704000         2000  2017-03-17 4:00:00
+60        607        704000         2000  2017-03-04 4:00:00
+2835      607        704000         2000  2017-03-28 4:00:00
+4646      607        704000         2000  2017-03-02 4:00:00
+2297      607        704000         2000  2017-03-07 4:00:00
+1436      607        704000         2000  2017-03-11 4:00:00
+4882      607        704000         2000  2017-03-25 4:00:00
+```
 
 Let's remove that outlier and return an AOV by calculating the mean order_amount.
 ```
